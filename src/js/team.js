@@ -4,7 +4,7 @@ export default class Team {
     }
     add(name) {
         this.members.forEach((item) => {
-            if(name == item) {
+            if(name === item) {
                 throw new Error('Игрок уже существует в команде');
             }
         });
